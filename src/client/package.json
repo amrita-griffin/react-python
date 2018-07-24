@@ -1,0 +1,43 @@
+{
+  "name": "react-python-flask",
+  "version": "1.0.0",
+  "description": "React front end integration with Python/Flask server",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --watch",
+    "build-min": "webpack --optimize-minimize --watch",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "watch": "webpack --progress -d --config webpack.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "python-server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrita-griffin/react-python-flask.git"
+  },
+  "author": "Amrita R",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amrita-griffin/react-python-flask/issues"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "homepage": "https://github.com/amrita-griffin/react-python-flask#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
