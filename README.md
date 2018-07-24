@@ -2,16 +2,18 @@
 A simple project that uses React on the front end and Python on the server
 
 ## System pre-requisites
-1) The project needs to have Python, NPM/Node and PIP installed on your machine
+The project needs to have Python, NPM/Node and PIP installed on your machine
 Check if your system already  has them installed by running these commands:
-    ```npm -v```
-    ```node -v``` 
-    ```pip --version```
+    > npm -v
+    > node -v 
+    > pip --version
+
+
 ### Download links
-    - (Get Node/npm)[https://nodejs.org/en/] 
-    - (Python)[https://www.python.org/downloads/] - v3.7.0
-    - (Pip)[http://pipenv.readthedocs.io/en/latest/install/#make-sure-you-ve-got-python-pip]
-    - To debug, press ```F5```, or hit 'Start' from the menu.
+- (Get Node/npm)[https://nodejs.org/en/] 
+- (Python)[https://www.python.org/downloads/] - v3.7.0
+- (Pip)[http://pipenv.readthedocs.io/en/latest/install/#make-sure-you-ve-got-python-pip]
+- To debug, press ```F5```, or hit 'Start' from the menu.
 
 ## Code structure
 - The ```client``` section contains HTML, CSS, JavaScript and React
@@ -20,22 +22,23 @@ Check if your system already  has them installed by running these commands:
 - This is an in-progress project and the structure is bound to change.
 
 ## Commands to run
-Go to ```/src/client``` and run
-```npm install```
+- Go to ```/src/client``` and run
+> npm install
+
 Make sure the node_modules folder is created
+- Build the javascript bundle
+> npm run dev-build
 
-Build the javascript bundle
-```npm run dev-build```
     Make sure the  ```/wwwroot/js/bundle.js``` is created and has some mumbled JS in it
-
-For making progress changes, leave one of the following running in a seperate command prompt
-```npm run  build``` 
+- For making progress changes, leave one of the following running in a seperate command prompt
+> npm run  build
+ 
     (or)
-```npm run build-min``` (production mode with minified bundle)
+> npm run build-min
 
 To load up the python server
 Go to ```/src/server``` and run
-```python app.py```
+> python app.py
 
 Open localhost:5000.
 Notice that the '/hello' link was created and gets a random value from Python into the front-end!
