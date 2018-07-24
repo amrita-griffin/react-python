@@ -4,9 +4,9 @@ A simple project that uses React on the front end and Python on the server
 ## System pre-requisites
 The project needs to have Python, NPM/Node and PIP installed on your machine
 Check if your system already  has them installed by running these commands:
-    > npm -v
-    > node -v 
-    > pip --version
+> npm -v
+> node -v 
+> pip --version
 
 
 ### Download links
