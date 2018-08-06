@@ -35,8 +35,43 @@ Make sure the  ```/wwwroot/js/bundle.js``` is created and has some mumbled JS in
  (or)
 > npm run build-min
 
-To load up the python server
-Go to ```/src/server``` and run
+- At this point, if you want to set up a site in  IIS, all you need to do  it point to the ```src/client``` folder, we're all set. For any UI changes, all you need to do is run the rebuild scripts and it should work across different browsers, with minified JS/CSS.
+
+- Read on to use a Python server
+
+## Server (Python) setup
+- There are a few challenges in setting this up in an IIS like server that are still in progress for the README
+- Also from Flask's documentation, using Python Flask is not recommended on a production server. If Python is preferred, use Django for serving the site/server side instead. 
+
+- Now, if you are up for the challenge, read on to setup a local Python server: 
+Go to ```/src/server``` and [create a virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
+
+- Upgrade pip version (optional step, may be requested for Python 32-bit)
+> python -m pip install --upgrade pip
+
+- Run on the ```/src``` folder: 
+> py -m pip install --user virtualenv
+
+It will install it here: ```C:\Users\<Username>\AppData\Local\Programs\Python\Python37[-32]``` 
+The packaged site folder can be deleted manually once done. 
+
+- Create a virtualenv (will create it in the ```AppData\Local\Programs\Python\Python37[-32]``` and local ```src```folders)
+> py -m virtualenv env
+
+- Activate
+> .\env\Scripts\activate.bat
+
+- Deactivate (optional)
+> .\env\Scripts\deactivate.bat
+
+- Before running the above command, ensure the ```Python\Scripts``` folder is in the User PATH system variables.
+It may be in ```AppData\Roaming``` or ```AppData\Local``` folder.
+> C:\Users\<userName>\AppData\Roaming\Python\Python37[-32]\Scripts
+
+- Install python Flask (distributions like Werkzeug are used)
+> pip install flask
+
+- Run the app locally
 > python app.py
 
 Open ```localhost:5000``` on your browser.
