@@ -4,10 +4,9 @@ export default class App extends React.Component {
     return (
     <Fragment>
       <p> 
-      Hello from the React World!
-      If you are able to open localhost:5000, you have a python server running.
+      Hello from a pure Front-end World!
       </p>
-      <a href="/hello">Random Salutation from Python!</a>
+      <a href="/hello">Hello from a Python server!</a>
     </Fragment>
     )
   }

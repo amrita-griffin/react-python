@@ -3,3 +3,6 @@ src/client/node_modules/*
 src/client/node_modules/bin/*
 src/client/package-lock.json
 src/client/wwwroot/*
+src/venv/*
+src/server/venv/*
+src/server/env/*

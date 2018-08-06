@@ -10,10 +10,9 @@ Check if your system already  has them installed by running these commands:
 
 > pip --version
 
-
 ### Download links
 - [node/npm](https://nodejs.org/en/)
-- [python](https://www.python.org/downloads/) - v3.7.0
+- [python](https://www.python.org/downloads/) - v3.7.0 - The 32-bit version is used, but instructions are provided on using  64-bit version instead.
 - [pip](http://pipenv.readthedocs.io/en/latest/install/#make-sure-you-ve-got-python-pip)
 
 ## Code structure
@@ -22,11 +21,11 @@ Check if your system already  has them installed by running these commands:
 - The  ```src``` section contains the Python server. 
 - This is an in-progress project and the structure is bound to change.
 
-## Commands to run
+## Client side setup
 - Go to ```/src/client``` and run
 > npm install
 
-Make sure the node_modules folder is created
+Make sure the ```node_modules``` folder is created
 - Build the javascript bundle
 > npm run dev-build
 
@@ -42,7 +41,7 @@ Go to ```/src/server``` and run
 
 Open ```localhost:5000``` on your browser.
 Notice that the ```/hello``` link was created and gets a random value from Python into the front-end!
-This can be changed to use with a component to consume the 'data'.
+For now, the link won't work without the Python server setup, as Python does the routing as well as sends mock data back. 
 
 Contact one of the core committers with issues or questions
 
